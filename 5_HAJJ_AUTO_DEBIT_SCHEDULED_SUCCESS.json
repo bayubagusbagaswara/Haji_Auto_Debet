@@ -1,0 +1,43 @@
+{
+  "transactionStatusData": [
+    {
+      "value": "<font color=\"#F4000000\" size=\"16\" weight=\"bold\">Rp ${nominalNabungRutin}</font>",
+      "key": "Nominal\nNabung Rutin",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountAlias}</font><br><font color=\"#9E000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${fromAccountNumber}</font>",
+      "key": "Rekening\nSumber",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
+      "detailTransaksi": [
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\"  weight=\"normal\">Setiap Tanggal ${tanggalSetoranRutin}</font>",
+          "key": "Tanggal Setoran Rutin",
+          "type": "data",
+          "background": "#00FFFFFF"
+        },
+        {
+          "value": "",
+          "key": "",
+          "type": "line"
+        },
+        {
+          "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">${rutinHingga}</font>",
+          "key": "Rutin Hingga",
+          "type": "data",
+          "background": "#00FFFFFF"
+        }
+      ]
+    }
+  ],
+  "receiptData": []
+}
