@@ -18,6 +18,17 @@
       "background": "#00FFFFFF"
     },
     {
+      "value": "",
+      "key": "",
+      "type": "line"
+    },
+    {
+      "value": "<font color=\"#F4000000\" size=\"14\" weight=\"bold\">${toAccountAlias}</font><br><font color=\"#9E000000\" size=\"14\" weight=\"normal\">${toAccountNumber}</font>",
+      "key": "Rekening<br />Penerima",
+      "type": "data",
+      "background": "#00FFFFFF"
+    },
+    {
       "detailTransaksi": [
         {
           "value": "<font color=\"#F4000000\" size=\"14\" type=\"autosize\" weight=\"normal\">Setiap Tanggal ${tanggalSetoranRutin}</font>",
