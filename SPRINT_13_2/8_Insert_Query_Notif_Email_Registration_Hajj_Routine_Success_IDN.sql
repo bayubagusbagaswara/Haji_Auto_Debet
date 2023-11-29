@@ -1,32 +1,32 @@
 INSERT INTO NOTIFICATION_MANAGEMENT_SERVICE.NOTIFICATION_TEMPLATE (
-        CREATED_BY,
-        CREATED_DATE,
-        "LANGUAGE",
-        MESSAGE_SENDER,
-        MESSAGE_SUBJECT,
-        MODIFIED_BY,
-        MODIFIED_DATE,
-        TEMPLATE_CODE,
-        TEMPLATE_TYPE,
-        MESSAGE_CONTENT,
-        ICON,
-        MESSAGE_TITLE,
-        ACTION_INFO,
-        ACTION_LINK,
-        ADDITIONAL_INFO
-    )
+    CREATED_BY,
+    CREATED_DATE,
+    "LANGUAGE",
+    MESSAGE_SENDER,
+    MESSAGE_SUBJECT,
+    MODIFIED_BY,
+    MODIFIED_DATE,
+    TEMPLATE_CODE,
+    TEMPLATE_TYPE,
+    MESSAGE_CONTENT,
+    ICON,
+    MESSAGE_TITLE,
+    ACTION_INFO,
+    ACTION_LINK,
+    ADDITIONAL_INFO
+  )
 VALUES (
-        'SYSTEM',
-        TIMESTAMP '2023-11-27 21:14:00',
-        'IDN',
-        'Bank Syariah Indonesia<development.bsi@ist.id>',
-        'Nabung Rutin Haji Berhasil',
-        NULL,
-        NULL,
-        'HAJJ_ROUTINE_SUCCESS',
-        'EMAIL',
-        TO_CLOB(
-            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    'SYSTEM',
+    TIMESTAMP '2023-11-27 21:14:00',
+    'IDN',
+    'Bank Syariah Indonesia<development.bsi@ist.id>',
+    'Nabung Rutin Haji Berhasil',
+    NULL,
+    NULL,
+    'HAJJ_ROUTINE_SUCCESS',
+    'EMAIL',
+    TO_CLOB(
+      '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -111,8 +111,8 @@ VALUES (
       }
 
       .two-colu'
-        ) || TO_CLOB(
-            'mns .content-value-bold-black {
+    ) || TO_CLOB(
+      'mns .content-value-bold-black {
         line-height: 0mm;
         padding-top: 10px;
         color: rgba(0, 0, 0, 0.96);
@@ -186,11 +186,11 @@ VALUES (
               <tr>
                 <td style="padding: 15px">
                   <p style="font-size: 16px; font-weight: bold">
-                    Nabung Rutin Haji Berhasil
+                    Nabung Rutin Haji Berhasil!
                   </p>
-   '
-        ) || TO_CLOB(
-            '             </td>
+  '
+    ) || TO_CLOB(
+      '              </td>
               </tr>
             </table>
           </td>
@@ -237,7 +237,7 @@ VALUES (
                             </td>
                             <td style="border-bottom: 1px solid #e0e0e0">
                               <p class="content-raw" style="font-size: 14px">
-                                ${nominalNabungRutin}
+                                Rp ${nominalNabungRutin}/bulan
                               </p>
                             </td>
                           </tr>
@@ -246,9 +246,9 @@ VALUES (
                             <td class="content-label">
                               Rekening<br />Penerima
                             </td>
-                            <td sty'
-        ) || TO_CLOB(
-            'le="border-bottom: 1px solid #e0e0e0">
+                         '
+    ) || TO_CLOB(
+      '   <td style="border-bottom: 1px solid #e0e0e0">
                               <p class="content-value-black">
                                 ${toAccountAlias}
                               </p>
@@ -263,7 +263,7 @@ VALUES (
                               Tanggal Nabung<br />Rutin
                             </td>
                             <td class="content-value-black-bottom">
-                              ${tanggalNabungRutin}
+                              Setiap Tanggal ${tanggalNabungRutin}
                             </td>
                           </tr>
 
@@ -294,10 +294,10 @@ VALUES (
                               ${terminal}
                             </td>
                           </tr>
-                        </table>
-          '
-        ) || TO_CLOB(
-            '            </td>
+                   '
+    ) || TO_CLOB(
+      '     </table>
+                      </td>
                     </tr>
                   </table>
                 </td>
@@ -366,10 +366,10 @@ VALUES (
         </tr>
 
         <!-- footer -->
-        <tr>
-          <td style='
-        ) || TO_CLOB(
-            '"background-color: #50b3ae">
+        <'
+    ) || TO_CLOB(
+      'tr>
+          <td style="background-color: #50b3ae">
             <table width="100%">
               <tr>
                 <td
@@ -422,10 +422,10 @@ VALUES (
                     />
                   </a>
                   <a
-                    href="https://bankbsi.id/twitter_bsi"
-                    s'
-        ) || TO_CLOB(
-            'tyle="color: #50b3ae00"
+                    href="https://bankbsi.id/twitter_bs'
+    ) || TO_CLOB(
+      'i"
+                    style="color: #50b3ae00"
                     target="_blank"
                   >
                     <img
@@ -472,10 +472,10 @@ VALUES (
   </body>
 </html>
 '
-        ),
-        NULL,
-        NULL,
-        NULL,
-        NULL,
-        NULL
-    );
+    ),
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+  );
